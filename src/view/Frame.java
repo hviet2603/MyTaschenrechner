@@ -62,6 +62,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "1";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn1.setBounds(87, 106, 85, 54);
@@ -72,6 +73,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "2";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn2.setBounds(202, 106, 85, 54);
@@ -82,6 +84,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "3";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn3.setBounds(316, 106, 85, 54);
@@ -92,6 +95,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "4";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn4.setBounds(87, 184, 85, 54);
@@ -102,6 +106,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "5";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn5.setBounds(202, 184, 85, 54);
@@ -112,6 +117,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "6";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn6.setBounds(316, 184, 85, 54);
@@ -122,6 +128,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "7";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn7.setBounds(87, 265, 85, 54);
@@ -132,6 +139,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "8";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn8.setBounds(202, 265, 85, 54);
@@ -142,6 +150,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "9";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn9.setBounds(316, 265, 85, 54);
@@ -152,6 +161,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "0";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btn0.setBounds(202, 351, 85, 54);
@@ -162,6 +172,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += ".";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnDOT.setBounds(87, 351, 85, 54);
@@ -174,6 +185,7 @@ public class Frame extends JFrame {
 				if (endindex >= 0) {
 					input = input.substring(0, endindex);
 					textPane.setText(input);
+					if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 				}
 			}
 		});
@@ -185,6 +197,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "+";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnADD.setBounds(457, 106, 85, 54);
@@ -195,6 +208,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "-";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnSUB.setBounds(457, 183, 85, 54);
@@ -205,6 +219,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "x";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnMUL.setBounds(457, 265, 85, 54);
@@ -215,6 +230,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += ":";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnDIV.setBounds(457, 351, 85, 54);
@@ -224,7 +240,7 @@ public class Frame extends JFrame {
 		btnAC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				input = "";
-				textPane.setForeground(Color.black);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 				textPane.setText(input);
 			}
 		});
@@ -236,6 +252,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += "(";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnOPEN.setBounds(457, 438, 85, 54);
@@ -246,6 +263,7 @@ public class Frame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				input += ")";
 				textPane.setText(input);
+				if (textPane.getForeground() != Color.black) textPane.setForeground(Color.black);
 			}
 		});
 		btnCLOSE.setBounds(457, 530, 85, 54);
@@ -262,7 +280,7 @@ public class Frame extends JFrame {
 						int intRes = (int) result;
 						input = String.valueOf(intRes);
 					} else {						
-						input = String.valueOf((int) result == result? (int) result : result);
+						input = String.valueOf(result);
 					}
 					textPane.setText(input);
 				} catch (Exception e1) {
